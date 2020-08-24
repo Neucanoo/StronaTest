@@ -247,6 +247,31 @@ main .blur {
 	aside {
 		width: 60px;
 	}
+
+	:root {
+		--header-height: 60px;
+	}
+	header {
+		padding: 0 20px;
+	}
+	.logo img {
+		max-height: 32px;
+	}
+
+	.menu-btn {
+		margin: 0 0 0 36px;
+		width: 36px;
+		height: 36px;
+	}
+	.menu-btn-line:first-child {
+		top: 10px;
+	}
+	.menu-btn-line:nth-child(2) {
+		top: 17px;
+	}
+	.menu-btn-line:nth-child(3) {
+		top: 24px;
+	}
 }
 @media screen and (max-width: 1024px) {
 	.main-content {
@@ -278,6 +303,9 @@ main .blur {
 	/*iphone x landscape*/
 	:root {
 		--header-height: 60px;
+	}
+	header {
+		padding: 0 20px;
 	}
 	.logo img {
 		max-height: 32px;
