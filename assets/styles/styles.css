@@ -78,16 +78,16 @@ header {
 	width: 100%;
 	height: 2px;
 }
-.menu-btn:hover .menu-btn-line:first-child {
+.menu-btn.active .menu-btn-line:first-child {
 	transform: translate(0%,9px) rotate(45deg);
 }
-.menu-btn:hover .menu-btn-line:nth-child(2) {
+.menu-btn.active .menu-btn-line:nth-child(2) {
 	transform: translate(0,1px) rotate(-45deg);
 }
-.menu-btn:hover .menu-btn-line:nth-child(3) {
+.menu-btn.active .menu-btn-line:nth-child(3) {
 	opacity: 0;
 }
-.menu-btn:hover span {
+.menu-btn.active span {
 	opacity: 0;
 }
 .menu-btn-line {
@@ -183,7 +183,6 @@ main .blur {
 	/* height: 17.866%; */
 	top: 60.934%;
 	width: 50.8333vw;
-	/* outline: 1px solid red; */
 }
 
 /*.main-content h1*/
@@ -209,11 +208,6 @@ main .blur {
 
 
 
-
-
-
-
-
 #virtualsection {
 	widows: 100%;
 	min-height: 100vh;
@@ -223,9 +217,7 @@ main .blur {
 }
 
 
-/* backdrop-filter */
-/*-b-media------------------------------------------*/
-/*-b-media------------------------------------------*/
+
 /*-b-media------------------------------------------*/
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 	main .blur {
@@ -325,7 +317,7 @@ main .blur {
 	.menu-btn-line:nth-child(3) {
 		top: 24px;
 	}
-	.menu-btn:hover .menu-btn-line:first-child {
+	.menu-btn.active .menu-btn-line:first-child {
 		transform: translate(0%,8px) rotate(45deg);
 	}
 
@@ -379,7 +371,7 @@ main .blur {
 	.menu-btn-line:nth-child(3) {
 		top: 24px;
 	}
-	.menu-btn:hover .menu-btn-line:first-child {
+	.menu-btn.active .menu-btn-line:first-child {
 		transform: translate(0%,8px) rotate(45deg);
 	}
 	
@@ -395,8 +387,6 @@ main .blur {
 		min-height: calc(100vh - 140px);
 	}
 }
-/*-e-media------------------------------------------*/
-/*-e-media------------------------------------------*/
 /*-e-media------------------------------------------*/
 
 
