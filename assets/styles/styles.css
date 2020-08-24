@@ -226,6 +226,33 @@ main .blur {
 
 
 /*-b-media------------------------------------------*/
+@media screen and (max-height: 820px) and (min-height: 681px) and (orientation: landscape) {
+	main .blur {
+		clip-path: inset(55% 0% 20% calc(49.167vw - 145px));
+	}
+	.main-content {
+		top: 55%;
+		bottom: 20%;
+	}
+}
+@media screen and (max-height: 680px) and (min-height: 581px) and (orientation: landscape) {
+	main .blur {
+		clip-path: inset(52% 0% 20% calc(49.167vw - 145px));
+	}
+	.main-content {
+		top: 52%;
+		bottom: 20%;
+	}
+}
+@media screen and (max-height: 580px) and (orientation: landscape) {
+	main .blur {
+		clip-path: inset(44% 0% 20% calc(49.167vw - 145px));
+	}
+	.main-content {
+		top: 44%;
+		bottom: 20%;
+	}
+}
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 	main .blur {
 		clip-path: inset(58% 0% 20% calc(49.167vw - 145px));
@@ -351,6 +378,15 @@ main .blur {
 	}
 }
 @media screen and (max-width: 767px) and (orientation: portrait) {
+	main .blur {
+		clip-path: inset(62% 0% 20% calc(49.167vw - 145px));
+	}
+	.main-content {
+		top: 62%;
+		bottom: 20%;
+	}
+}
+@media screen and (max-width: 767px) and (min-height: 700px) and (orientation: portrait) {
 	main .blur {
 		clip-path: inset(68% 0% 20% calc(49.167vw - 145px));
 	}
