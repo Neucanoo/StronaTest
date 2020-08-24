@@ -73,15 +73,23 @@ header {
 	cursor: pointer;
 }
 .menu-btn-line {
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
 	user-select: none;
 	width: 100%;
 	height: 2px;
 }
 .menu-btn.active .menu-btn-line:first-child {
+	-webkit-transform: translate(0%,9px) rotate(45deg);
+	-ms-transform: translate(0%,9px) rotate(45deg);
 	transform: translate(0%,9px) rotate(45deg);
 }
 .menu-btn.active .menu-btn-line:nth-child(2) {
+	-webkit-transform: translate(0%,1px) rotate(-45deg);
+	-ms-transform: translate(0%,1px) rotate(-45deg);
 	transform: translate(0,1px) rotate(-45deg);
 }
 .menu-btn.active .menu-btn-line:nth-child(3) {
@@ -94,6 +102,10 @@ header {
 	position: absolute;
 	background-color: var(--main);
 	height: 2px;
+    -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
+    -moz-transition: transform 0.3s ease, opacity 0.3s ease;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: -ms-transform 0.3s ease, opacity 0.3s ease;
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .menu-btn-line:first-child {
@@ -169,6 +181,7 @@ main .blur {
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-clip-path: inset(60.934% 0% 21.2% calc(49.167vw - 145px));
 	clip-path: inset(60.934% 0% 21.2% calc(49.167vw - 145px));
 	filter: blur(10px);
 }
@@ -228,6 +241,7 @@ main .blur {
 /*-b-media------------------------------------------*/
 @media screen and (max-height: 820px) and (min-height: 681px) and (orientation: landscape) {
 	main .blur {
+		-webkit-clip-path: inset(55% 0% 20% calc(49.167vw - 145px));
 		clip-path: inset(55% 0% 20% calc(49.167vw - 145px));
 	}
 	.main-content {
@@ -237,6 +251,7 @@ main .blur {
 }
 @media screen and (max-height: 680px) and (min-height: 581px) and (orientation: landscape) {
 	main .blur {
+		-webkit-clip-path: inset(58% 0% 20% calc(49.167vw - 145px));
 		clip-path: inset(52% 0% 20% calc(49.167vw - 145px));
 	}
 	.main-content {
@@ -246,6 +261,7 @@ main .blur {
 }
 @media screen and (max-height: 580px) and (orientation: landscape) {
 	main .blur {
+		-webkit-clip-path: inset(58% 0% 20% calc(49.167vw - 145px));
 		clip-path: inset(44% 0% 20% calc(49.167vw - 145px));
 	}
 	.main-content {
@@ -255,6 +271,7 @@ main .blur {
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 	main .blur {
+		-webkit-clip-path: inset(58% 0% 20% calc(49.167vw - 145px));
 		clip-path: inset(58% 0% 20% calc(49.167vw - 145px));
 	}
 	.main-content {
@@ -264,6 +281,7 @@ main .blur {
 }
 @media screen and (max-width: 1024px) and (orientation: portrait) {
 	main .blur {
+		-webkit-clip-path: inset(64% 0% 20% calc(49.167vw - 145px));
 		clip-path: inset(64% 0% 20% calc(49.167vw - 145px));
 	}
 	.main-content {
@@ -355,6 +373,8 @@ main .blur {
 		top: 24px;
 	}
 	.menu-btn.active .menu-btn-line:first-child {
+		-webkit-transform: translate(0%,8px) rotate(45deg);
+		-ms-transform: translate(0%,8px) rotate(45deg);
 		transform: translate(0%,8px) rotate(45deg);
 	}
 
@@ -370,6 +390,7 @@ main .blur {
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
 	main .blur {
+		-webkit-clip-path: inset(58% 0% 20% calc(49.167vw - 145px));
 		clip-path: inset(58% 0% 20% calc(49.167vw - 145px));
 	}
 	.main-content {
@@ -379,6 +400,7 @@ main .blur {
 }
 @media screen and (max-width: 767px) and (orientation: portrait) {
 	main .blur {
+		-webkit-clip-path: inset(62% 0% 20% calc(49.167vw - 145px));
 		clip-path: inset(62% 0% 20% calc(49.167vw - 145px));
 	}
 	.main-content {
@@ -388,6 +410,7 @@ main .blur {
 }
 @media screen and (max-width: 767px) and (min-height: 700px) and (orientation: portrait) {
 	main .blur {
+		-webkit-clip-path: inset(68% 0% 20% calc(49.167vw - 145px));
 		clip-path: inset(68% 0% 20% calc(49.167vw - 145px));
 	}
 	.main-content {
@@ -421,6 +444,8 @@ main .blur {
 		top: 24px;
 	}
 	.menu-btn.active .menu-btn-line:first-child {
+		-webkit-transform: translate(0%,8px) rotate(45deg);
+		-ms-transform: translate(0%,8px) rotate(45deg);
 		transform: translate(0%,8px) rotate(45deg);
 	}
 	
