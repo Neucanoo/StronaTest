@@ -209,11 +209,18 @@ main .blur {
 
 
 #virtualsection {
+	padding: 0 0 0 145px;
+	position: relative;
+	box-sizing: border-box;
+	background-color: var(--bg-header);
+}
+#virtualsection .bg {
 	widows: 100%;
 	min-height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	
 }
 
 
@@ -237,7 +244,10 @@ main .blur {
 		bottom: 20%;
 	}
 	aside {
-		width: 60px;
+		width: 50px;
+	}
+	#virtualsection {
+		padding: 0 0 0 50px;
 	}
 
 	:root {
@@ -325,6 +335,9 @@ main .blur {
 		width: 50px;
 		padding: 20px 0;
 	}
+	#virtualsection {
+		padding: 0 0 0 50px;
+	}
 }
 
 
@@ -378,6 +391,9 @@ main .blur {
 	aside {
 		width: 50px;
 		padding: 20px 0;
+	}
+	#virtualsection {
+		padding: 0 0 0 50px;
 	}
 	h1 {
 		font-size: 52px;
